@@ -12,7 +12,7 @@ public class InvalidUrlException : Exception
     {
     }
 
-    public static void ThrowIfInvalidUrl(string address, string message = DEFAULT_ERROR_MESSAGE)
+    public static void ThrowIfInvalid(string address, string message = DEFAULT_ERROR_MESSAGE)
     {
         if(string.IsNullOrEmpty(address))
         {
