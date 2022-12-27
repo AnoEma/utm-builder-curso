@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace UtmBuilder.core.ValueObjects.Exceptions;
 
-public class InvalidUrlException : Exception
+public partial class InvalidUrlException : Exception
 {
     private const string DEFAULT_ERROR_MESSAGE = "Invalid Url";
     public InvalidUrlException(string message = DEFAULT_ERROR_MESSAGE) : base(message)
